@@ -27,6 +27,11 @@
   border-radius: 50%;
 }
 
+#testimonial {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
 .testimonial-img {
   border-radius: 50%;
 }
