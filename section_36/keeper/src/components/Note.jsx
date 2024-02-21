@@ -1,7 +1,8 @@
 export default function Note() {
     return (
-        <div>
-            <p></p>
+        <div className="note">
+            <h1>Title</h1>
+            <p>Text</p>
         </div>
     )
 };
