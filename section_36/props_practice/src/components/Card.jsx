@@ -1,3 +1,6 @@
+import Avatar from "./Avatar.jsx";
+import Detail from "./Detail.jsx";
+
 export default function Card(props) {
     const contact = props.contact
     return (
@@ -5,15 +8,12 @@ export default function Card(props) {
             <div className="card">
                 <div className="top">
                     <h2 className="name">{contact.name}</h2>
-                    <img
-                        className="circle-img"
-                        src={contact.imgURL}
-                        alt="avatar_img"
-                    />
+                    <Avatar img={contact.imgURL} />
                 </div>
                 <div className="bottom">
-                    <p className="info">{contact.phone}</p>
-                    <p className="info">{contact.email}</p>
+                    <Detail
+                    contact={contact}
+                    />
                 </div>
             </div>
         </div>
