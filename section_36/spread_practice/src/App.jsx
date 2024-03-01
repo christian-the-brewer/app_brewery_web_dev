@@ -27,8 +27,19 @@ function App() {
         return (
             <ListItem
                 key={key}
-                item={item} />
+                id={key}
+                item={item}
+                handleDelete={handleDelete}
+            />
         )
+    }
+
+    function handleDelete(id) {
+        setList(prevState => {
+            return prevState.filter((element, index) => {
+                return index !== id
+            });
+        });
     }
 
     const List = list.map(createList)
